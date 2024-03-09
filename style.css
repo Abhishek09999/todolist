@@ -1,0 +1,21 @@
+body {
+    padding-top: 20px;
+}
+.status {
+    margin-bottom: 20px;
+}
+.card {
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 40px; /* Space for icons */
+}
+.card .actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    display: none;
+}
+.card:hover .actions {
+    display: block;
+}

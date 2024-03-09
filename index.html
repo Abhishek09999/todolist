@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Board</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="status" id="notStarted">
+                <h5>Not Started <span class="badge badge-primary" id="notStartedCount">0</span></h5>
+                <div id="notStartedList"></div>
+            </div>
+            <form id="addNotStartedForm">
+                <input type="text" id="newNotStarted" class="form-control mb-2" placeholder="Enter task">
+                <button type="submit" class="btn btn-success btn-block">Add</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="status" id="inProgress">
+                <h5>In Progress <span class="badge badge-primary" id="inProgressCount">0</span></h5>
+                <div id="inProgressList"></div>
+            </div>
+            <form id="addInProgressForm">
+                <input type="text" id="newInProgress" class="form-control mb-2" placeholder="Enter task">
+                <button type="submit" class="btn btn-success btn-block">Add</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="status" id="completed">
+                <h5>Completed <span class="badge badge-primary" id="completedCount">0</span></h5>
+                <div id="completedList"></div>
+            </div>
+            <form id="addCompletedForm">
+                <input type="text" id="newCompleted" class="form-control mb-2" placeholder="Enter task">
+                <button type="submit" class="btn btn-success btn-block">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
